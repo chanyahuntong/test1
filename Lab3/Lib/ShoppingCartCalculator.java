@@ -38,7 +38,7 @@ public class ShoppingCartCalculator {
              if (item.quantity() >= 6) {
                 total = total + ( quantity * price * 0.9 ) ;
             } else {
-                total = quantity * price ;
+                total = total + (price * quantity) ;
             }
         } 
     }
