@@ -13,7 +13,7 @@ public class ShoppingCartCalculator {
      */
     public static double calculateTotalPrice(ArrayList<CartItem> items) {
 
-        if (items == null || items.isEmpty() || items.size() < 0 ){
+        if (items == null || items.isEmpty() || items.size() < 0 || items.size() > 1000 ){
             return 0.0;    
         }
         
